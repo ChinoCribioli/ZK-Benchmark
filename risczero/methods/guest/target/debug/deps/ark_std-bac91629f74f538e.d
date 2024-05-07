@@ -1,0 +1,12 @@
+/home/chino/Desktop/risczero/methods/guest/target/debug/deps/libark_std-bac91629f74f538e.rmeta: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/io/mod.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/io/error.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/error.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/rand_helper.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/perf_trace.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/iterable/mod.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/iterable/rev.rs
+
+/home/chino/Desktop/risczero/methods/guest/target/debug/deps/ark_std-bac91629f74f538e.d: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/io/mod.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/io/error.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/error.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/rand_helper.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/perf_trace.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/iterable/mod.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/iterable/rev.rs
+
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/lib.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/io/mod.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/io/error.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/error.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/rand_helper.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/perf_trace.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/iterable/mod.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-std-0.4.0/src/iterable/rev.rs:

@@ -1,0 +1,12 @@
+/home/chino/Desktop/test_project_risczero/methods/guest/target/debug/deps/libsemver-0a8b14070cd7c4bf.rmeta: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/backport.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/display.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/error.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/eval.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/identifier.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/impls.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/parse.rs
+
+/home/chino/Desktop/test_project_risczero/methods/guest/target/debug/deps/semver-0a8b14070cd7c4bf.d: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/backport.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/display.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/error.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/eval.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/identifier.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/impls.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/parse.rs
+
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/lib.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/backport.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/display.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/error.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/eval.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/identifier.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/impls.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/semver-1.0.22/src/parse.rs:

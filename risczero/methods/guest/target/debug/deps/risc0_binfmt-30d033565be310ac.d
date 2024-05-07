@@ -1,0 +1,9 @@
+/home/chino/Desktop/risczero/methods/guest/target/debug/deps/librisc0_binfmt-30d033565be310ac.rmeta: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/elf.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/hash.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/image.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/sys_state.rs
+
+/home/chino/Desktop/risczero/methods/guest/target/debug/deps/risc0_binfmt-30d033565be310ac.d: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/elf.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/hash.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/image.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/sys_state.rs
+
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/lib.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/elf.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/hash.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/image.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/risc0-binfmt-0.21.0/src/sys_state.rs:

@@ -1,0 +1,10 @@
+/home/chino/Desktop/test_project_risczero/methods/guest/target/debug/deps/libark_groth16-2d000516422a2564.rmeta: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/r1cs_to_qap.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/data_structures.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/generator.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/prover.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/verifier.rs
+
+/home/chino/Desktop/test_project_risczero/methods/guest/target/debug/deps/ark_groth16-2d000516422a2564.d: /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/lib.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/r1cs_to_qap.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/data_structures.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/generator.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/prover.rs /home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/verifier.rs
+
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/lib.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/r1cs_to_qap.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/data_structures.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/generator.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/prover.rs:
+/home/chino/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ark-groth16-0.4.0/src/verifier.rs:
