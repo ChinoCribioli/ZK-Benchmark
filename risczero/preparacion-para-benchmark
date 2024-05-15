@@ -1,3 +1,7 @@
-RISC0_DEV_MODE=1 cargo run --release  -----------------> esto es para correrlo de forma mas barata, simplemente para testear
+time RISC0_DEV_MODE=1 cargo run --release  -----------------> esto es para correrlo de forma mas barata, simplemente para testear
 
 RISC0_DEV_MODE=0 RUST_LOG="[executor]=info" cargo run --release -------> esto es para correrlo y que te tire estadisticas de la ejecucion. Lo dice https://dev.risczero.com/api/zkvm/quickstart
+
+
+
+Overall, aprender a usar risc0 fue un poco incomodo porque los formatos en los que se pueden pasar inputs a traves del env son un poco restrictivos, junto al hecho de que en el guest no tenes la libreria estandar de Rust entonces te la tenes que ingeniar con lo que tenes y/o rebuscartela para importar los objetos que necesitas de otros lados como la libreria alloc.

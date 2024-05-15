@@ -1,2 +1,4 @@
-risczero/target/
-risczero/methods/guest/target/
+risczero/target
+risczero/methods/guest/target
+sp1/program/target
+sp1/script/target
