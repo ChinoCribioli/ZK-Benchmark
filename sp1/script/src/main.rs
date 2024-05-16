@@ -2,7 +2,7 @@
 
 use std::fs::read_to_string;
 
-use sp1_sdk::{ProverClient, SP1Stdin};
+use sp1_sdk::{ProverClient, SP1ProofWithPublicValues, SP1Stdin};
 
 const ELF: &[u8] = include_bytes!("../../program/elf/riscv32im-succinct-zkvm-elf");
 
@@ -33,4 +33,8 @@ fn main() {
         .expect("saving proof failed");
 
     println!("successfully generated and verified proof for the program!");
+
+    // let deserialized_proof = SP1ProofWithPublicValues::<usize>::load("proof-with-io.json")
+    //     .expect("couldn't retrieve proof");
+    // client.verify(&deserialized_proof, &vk);
 }
