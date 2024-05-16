@@ -1,0 +1,39 @@
+inicial (sin BTreeSet y haciendo nth(i) en vez de con un solo iterador):
+real	9m55,540s
+user	68m50,973s
+sys	0m6,845s
+
+real	10m10,533s
+user	73m15,207s
+sys	0m5,955s
+
+
+
+usando solo un iterador (sin BTreeSet y haciendo line_chars.next()):
+real	5m5,535s
+user	33m33,586s
+sys	0m4,068s
+
+real	5m7,527s
+user	34m46,372s
+sys	0m3,315s
+
+real	4m55,312s
+user	32m52,269s
+sys	0m3,525s
+
+
+
+con BTreeSet:
+
+real	7m22,673s
+user	51m20,812s
+sys	0m4,669s
+
+real	6m15,534s
+user	42m49,389s
+sys	0m4,144s
+
+real	6m18,575s
+user	43m8,144s
+sys	0m4,238s

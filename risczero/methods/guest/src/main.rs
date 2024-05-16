@@ -26,38 +26,22 @@ fn main() {
     let mut answer: usize = 0;
     for line in input {
         let len = line.len();
-        // let mut line_chars = line.chars();
+        let mut line_chars = line.chars();
         let mut is_present: Vec<bool> = Vec::new();
         for _ in 0..52 {
             is_present.push(false);
         }
-        for i in 0..len/2 {
-            let priority = get_priority(line.chars().nth(i).unwrap());
-            // let priority = get_priority(line_chars.next().unwrap());
+        for _ in 0..len/2 {
+            let priority = get_priority(line_chars.next().unwrap());
             is_present[priority] = true;
         }
-        for i in len/2..len {
-            let new_priority = get_priority(line.chars().nth(i).unwrap());
-            // let new_priority = get_priority(line_chars.next().unwrap());
+        for _ in 0..len/2 {
+            let new_priority = get_priority(line_chars.next().unwrap());
             if is_present[new_priority] {
                 answer += new_priority+1;
                 break;
             }
         }
-        
-        // use alloc::collections::BTreeSet;
-        // let mut components_set: BTreeSet<char> = BTreeSet::new();
-        // for i in 0..len/2 {
-        //     let component = line.chars().nth(i).unwrap();
-        //     components_set.insert(component);
-        // }
-        // for i in len/2..len {
-        //     let new_component = line.chars().nth(i).unwrap();
-        //     if components_set.contains(&new_component) {
-        //         answer += get_priority(new_component as usize);
-        //     }
-        // }
-
     }
 
     // write public output to the journal

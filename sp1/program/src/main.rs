@@ -3,20 +3,33 @@
 #![no_main]
 sp1_zkvm::entrypoint!(main);
 
-pub fn main() {
-    // NOTE: values of n larger than 186 will overflow the u128 type,
-    // resulting in output that doesn't match fibonacci sequence.
-    // However, the resulting proof will still be valid!
-    let n = sp1_zkvm::io::read::<u32>();
-    let mut a: u128 = 0;
-    let mut b: u128 = 1;
-    let mut sum: u128;
-    for _ in 1..n {
-        sum = a + b;
-        a = b;
-        b = sum;
+fn get_priority(component: char) -> usize {
+    let char_as_int = component as usize;
+    if (97..=122).contains(&char_as_int) {
+        char_as_int-97
+    } else {
+        char_as_int-39
     }
+}
 
-    sp1_zkvm::io::commit(&a);
-    sp1_zkvm::io::commit(&b);
+pub fn main() {
+    let input = sp1_zkvm::io::read::<Vec<String>>();
+    let mut answer: usize = 0;
+    for line in input {
+        let len = line.len();
+        let mut line_chars = line.chars();
+        let mut is_present: Vec<bool> = vec![false; 52];
+        for _ in 0..len/2 {
+            let priority = get_priority(line_chars.next().unwrap());
+            is_present[priority] = true;
+        }
+        for _ in 0..len/2 {
+            let new_priority = get_priority(line_chars.next().unwrap());
+            if is_present[new_priority] {
+                answer += new_priority+1;
+                break;
+            }
+        }
+    }
+    sp1_zkvm::io::commit(&answer);
 }

@@ -32,24 +32,15 @@ fn main() {
         .prove(env, GUEST_TEST_PROJECT_ELF)
         .unwrap();
 
-    // Implement code for retrieving receipt journal here.
-    let _output: usize = receipt.journal.decode().unwrap();
-    
     // let serialized_receipt = serde_json::to_string(&receipt).unwrap();
-    // write("./host/receipt.txt", serialized_receipt);
-    
-    // The receipt was verified at the end of proving, but the below code is an
-    // example of how someone else could verify this receipt.
-    // receipt
-    //     .verify(GUEST_TEST_PROJECT_ID)
-    //     .unwrap();
+    // write("./host/receipt.txt", serialized_receipt)
+    //     .expect("Couldn't write receipt in txt file.");
 }
 
 #[test]
 pub fn test_verify_serialized_receipt() {
     let serialized_receipt = read_to_string("./receipt.txt")
         .unwrap();
-    println!("{}",serialized_receipt);
     let deserialized: Receipt = serde_json::from_str(&serialized_receipt).unwrap();
     deserialized
         .verify(GUEST_TEST_PROJECT_ID)
