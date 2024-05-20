@@ -7,3 +7,6 @@ Me gusta que en la doc te explique como serializar los inputs y outputs. En risc
 En https://succinctlabs.github.io/sp1/generating-proofs/advanced.html hay algunas discusiones de como mejorar la performance, bajar el tamaño de la prueba a un tamaño fijo, o mejorar el uso de memoria.
 
 Aca https://github.com/rkdud007/sp1-storage-proof/blob/storage-proof/script/src/main.rs usan el metodo std::time::Instant::now(); para medir cuanto tiempo se tarda en la generacion de pruebas y verificacion.
+
+
+para correr: time RUST_LOG=info cargo run --release
