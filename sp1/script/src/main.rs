@@ -2,9 +2,14 @@
 
 use std::fs::read_to_string;
 
-use sp1_sdk::{ProverClient, SP1ProofWithPublicValues, SP1Stdin};
+use sp1_sdk::{ProverClient, SP1Proof, SP1Stdin};
+// use sp1_core::stark::types::ShardProof;
 
 const ELF: &[u8] = include_bytes!("../../program/elf/riscv32im-succinct-zkvm-elf");
+
+fn print_type_of<T>(_: &T) {
+    println!("{}", std::any::type_name::<T>())
+}
 
 fn main() {
     // Generate proof.
@@ -32,9 +37,12 @@ fn main() {
         .save("proof-with-io.json")
         .expect("saving proof failed");
 
+    print_type_of(&proof);
+
     println!("successfully generated and verified proof for the program!");
 
-    // let deserialized_proof = SP1ProofWithPublicValues::<usize>::load("proof-with-io.json")
-    //     .expect("couldn't retrieve proof");
-    // client.verify(&deserialized_proof, &vk);
+    let mut deserialized_proof = SP1Proof::load("proof-with-io.json")
+        .expect("couldn't retrieve proof");
+    client.verify(&deserialized_proof, &vk).expect("deserialized proof is invalid.");
+    println!("se verifico la prueba deserializada: {}", deserialized_proof.public_values.read::<usize>());
 }

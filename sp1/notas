@@ -1,7 +1,9 @@
-Esta bueno que la curva de aprendizaje en sp1 es mas tranquila, y ya te automatiza la serializacion de la prueba porque te la guarda directamente en proof-with-io.json
+Esta bueno que la curva de aprendizaje en sp1 es mas tranquila, y ya te automatiza la serializacion de la prueba porque te la guarda directamente en proof-with-io.json.
 
 Eso si, que yo sepa no tiene DEV-MODE entonces es mas incomodo para testear/debuguear porque tarda en generar cada prueba.
 
-Me gusta que en la doc te explique como serializar los inputs y outputs. En risc0 tuve problemas con esto, desconozco si por falta de pericia mia o por incapacidad del framework. Pero es otra muestra de que sp1 se siente como una integracion mas natural de rust
+Me gusta que en la doc te explique como serializar los inputs y outputs. En risc0 tuve problemas con esto, desconozco si por falta de pericia mia o por incapacidad del framework. Pero es otra muestra de que sp1 se siente como una integracion mas natural de rust. Eso si, descubrir como deserializar me esta tomando bastante mas trabajo porque en ningun lado lo explican (chino del futuro: Costo mucho entender como deserializar una prueba desde un el proof-with-io.json pero mirando el codigo del framework en un lib.rs vi que definen un alias: `pub type SP1Proof = SP1ProofWithPublicValues<Vec<ShardProof<CoreSC>>>;` y entonces importe esa clase y pude traerme la proof tipandola como SP1Proof y llamando al metodo load).
 
 En https://succinctlabs.github.io/sp1/generating-proofs/advanced.html hay algunas discusiones de como mejorar la performance, bajar el tamaño de la prueba a un tamaño fijo, o mejorar el uso de memoria.
+
+Aca https://github.com/rkdud007/sp1-storage-proof/blob/storage-proof/script/src/main.rs usan el metodo std::time::Instant::now(); para medir cuanto tiempo se tarda en la generacion de pruebas y verificacion.
