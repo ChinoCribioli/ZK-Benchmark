@@ -37,8 +37,15 @@ fn bench_snafu(b: &mut BenchmarkRun, (path, answer): (String, String)) {
     let serialized_receipt = serde_json::to_string(&receipt).unwrap();
     b.log("proof_size_bytes", serialized_receipt.len());
 
-    println!("Esta es la answer: {}", receipt.journal.decode::<String>().unwrap());
     assert_eq!(receipt.journal.decode::<String>().unwrap(), answer);
+}
+
+#[benchmark("Beacons", [
+    ("SampleInput", (String::from("./inputs/beacons/sampleInput.txt"), 10, 26)),
+    ("FullInput", (String::from("./inputs/beacons/fullInput.txt"), 2_000_000, 5838453)),
+])]
+fn bench_beacons(b: &mut BenchmarkRun, (path, target_row, answer): (String, i32, i32)) {
+    return;
 }
 
 benchy::main!(
