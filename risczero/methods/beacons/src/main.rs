@@ -6,6 +6,7 @@
 extern crate alloc;
 
 use alloc::vec::Vec;
+use alloc::string::String;
 use serde_json::from_str;
 
 use risc0_zkvm::guest::env;

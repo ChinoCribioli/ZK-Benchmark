@@ -1,0 +1,92 @@
+{
+  "name": "benchmark",
+  "results": [
+    {
+      "name": "Components",
+      "results": [
+        {
+          "metrics": {
+            "proof_generation_time": 13118,
+            "proof_size_bytes": 562766,
+            "verification_time": 12
+          },
+          "name": "SampleInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        },
+        {
+          "metrics": {
+            "proof_generation_time": 271757,
+            "proof_size_bytes": 719906,
+            "verification_time": 26
+          },
+          "name": "FullInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Snafu",
+      "results": [
+        {
+          "metrics": {
+            "proof_generation_time": 19573,
+            "proof_size_bytes": 562774,
+            "verification_time": 20
+          },
+          "name": "SampleInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        },
+        {
+          "metrics": {
+            "proof_generation_time": 79540,
+            "proof_size_bytes": 653631,
+            "verification_time": 22
+          },
+          "name": "FullInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Beacons",
+      "results": [
+        {
+          "metrics": {
+            "proof_generation_time": 38794,
+            "proof_size_bytes": 622840,
+            "verification_time": 21
+          },
+          "name": "SampleInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        },
+        {
+          "metrics": {
+            "proof_generation_time": 79767,
+            "proof_size_bytes": 653457,
+            "verification_time": 23
+          },
+          "name": "FullInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        }
+      ]
+    }
+  ]
+}

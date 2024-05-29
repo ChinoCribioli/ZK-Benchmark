@@ -200,6 +200,14 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "f1fdabc7756949593fe60f30ec81974b613357de856987752631dea1e3394c80"
 
 [[package]]
+name = "beacons"
+version = "0.1.0"
+dependencies = [
+ "risc0-zkvm",
+ "serde_json",
+]
+
+[[package]]
 name = "blake2"
 version = "0.10.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -242,14 +250,6 @@ name = "cfg-if"
 version = "1.0.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "baf1de4339761588bc0619e3cbc0120ee582ebb74b53b4efbf79117bd2da40fd"
-
-[[package]]
-name = "beacons"
-version = "0.1.0"
-dependencies = [
- "risc0-zkvm",
- "serde_json",
-]
 
 [[package]]
 name = "const-oid"

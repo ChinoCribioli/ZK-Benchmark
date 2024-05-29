@@ -1,10 +1,12 @@
 extern crate host;
 
 use benchy::{benchmark, BenchmarkRun};
-use host::{components::components, snafu::snafu};
+use host::{components::components, snafu::snafu, beacons::beacons};
 use risc0_zkvm::Receipt;
-use methods::{COMPONENTS_ID, SNAFU_ID};
+use methods::{COMPONENTS_ID, SNAFU_ID, BEACONS_ID};
 use std::time::Instant;
+
+// run `cargo bench` in the host directory to run benchmarks.
 
 #[benchmark("Components", [
     ("SampleInput", (String::from("./inputs/components/sampleInput.txt"), 157)),
@@ -45,10 +47,20 @@ fn bench_snafu(b: &mut BenchmarkRun, (path, answer): (String, String)) {
     ("FullInput", (String::from("./inputs/beacons/fullInput.txt"), 2_000_000, 5838453)),
 ])]
 fn bench_beacons(b: &mut BenchmarkRun, (path, target_row, answer): (String, i32, i32)) {
-    return;
+    let mut now = Instant::now(); 
+    let receipt: Receipt = beacons(&path, target_row);
+    b.log("proof_generation_time", now.elapsed().as_millis() as usize);
+    now = Instant::now();
+    receipt.verify(BEACONS_ID).unwrap();
+    b.log("verification_time", now.elapsed().as_millis() as usize);
+    let serialized_receipt = serde_json::to_string(&receipt).unwrap();
+    b.log("proof_size_bytes", serialized_receipt.len());
+
+    assert_eq!(receipt.journal.decode::<i32>().unwrap(), answer);
 }
 
 benchy::main!(
     bench_components,
     bench_snafu,
+    bench_beacons,
 );
