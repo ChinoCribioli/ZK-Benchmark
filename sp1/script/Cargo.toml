@@ -1,11 +1,17 @@
 [workspace]
 [package]
 version = "0.1.0"
-name = "adventofcode-script"
+name = "script"
 edition = "2021"
 
 [dependencies]
+benchy = "0.1.1"
+serde_json = "1.0.117"
 sp1-sdk = { git = "https://github.com/succinctlabs/sp1.git", rev = "v1.0.0-testnet" }
 
 [build-dependencies]
 sp1-helper = { git = "https://github.com/succinctlabs/sp1.git", rev = "v1.0.0-testnet"  }
+
+[[bench]]
+name = "benchmark"
+harness = false

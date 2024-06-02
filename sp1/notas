@@ -10,3 +10,8 @@ Aca https://github.com/rkdud007/sp1-storage-proof/blob/storage-proof/script/src/
 
 
 para correr: time RUST_LOG=info cargo run --release
+
+El benchmark_run.json que aparece ahi tardo
+real	35m32,600s
+user	246m31,357s
+sys 	0m58,095s

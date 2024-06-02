@@ -1,5 +1,3 @@
-//! A simple program to be proven inside the zkVM.
-
 #![no_main]
 sp1_zkvm::entrypoint!(main);
 
@@ -12,13 +10,17 @@ fn get_priority(component: char) -> usize {
     }
 }
 
-pub fn main() {
-    let input = sp1_zkvm::io::read::<Vec<String>>();
+fn main() {
+    let input: Vec<String> = sp1_zkvm::io::read::<Vec<String>>();
+    
     let mut answer: usize = 0;
     for line in input {
         let len = line.len();
         let mut line_chars = line.chars();
-        let mut is_present: Vec<bool> = vec![false; 52];
+        let mut is_present: Vec<bool> = Vec::new();
+        for _ in 0..52 {
+            is_present.push(false);
+        }
         for _ in 0..len/2 {
             let priority = get_priority(line_chars.next().unwrap());
             is_present[priority] = true;
@@ -31,5 +33,6 @@ pub fn main() {
             }
         }
     }
+
     sp1_zkvm::io::commit(&answer);
 }

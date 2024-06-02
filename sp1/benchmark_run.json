@@ -1,0 +1,92 @@
+{
+  "name": "benchmark",
+  "results": [
+    {
+      "name": "Components",
+      "results": [
+        {
+          "metrics": {
+            "proof_generation_time": 172111,
+            "proof_size_bytes": 2838780,
+            "verification_time": 283
+          },
+          "name": "SampleInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        },
+        {
+          "metrics": {
+            "proof_generation_time": 305579,
+            "proof_size_bytes": 3654442,
+            "verification_time": 425
+          },
+          "name": "FullInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Snafu",
+      "results": [
+        {
+          "metrics": {
+            "proof_generation_time": 186373,
+            "proof_size_bytes": 2851093,
+            "verification_time": 281
+          },
+          "name": "SampleInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        },
+        {
+          "metrics": {
+            "proof_generation_time": 181912,
+            "proof_size_bytes": 3071275,
+            "verification_time": 288
+          },
+          "name": "FullInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "Beacons",
+      "results": [
+        {
+          "metrics": {
+            "proof_generation_time": 161836,
+            "proof_size_bytes": 2853665,
+            "verification_time": 272
+          },
+          "name": "SampleInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        },
+        {
+          "metrics": {
+            "proof_generation_time": 174276,
+            "proof_size_bytes": 3049274,
+            "verification_time": 285
+          },
+          "name": "FullInput",
+          "time": {
+            "nanos": 0,
+            "secs": 0
+          }
+        }
+      ]
+    }
+  ]
+}
