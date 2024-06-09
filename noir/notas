@@ -5,3 +5,9 @@ noir tiene un template project mas simple/limpio. Es decir, no tiene 1 millon de
 La clasica desventaja de noir es que es un lenguaje aparte en vez de un framework hecho sobre Rust.
 
 Para generar una prueba con diferentes inputs, podes crear varios .toml files y cuando corres nargo prove pasas el flag --prover-name o -p.
+
+
+
+cosas incomodas de noir como lenguaje: 
+* No permite arrays de tamaño arbitrario como input en funciones en general.
+* No permite hacer break en un for en funciones que no sean unconstrained.
